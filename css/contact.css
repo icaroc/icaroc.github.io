@@ -1,0 +1,8 @@
+body {
+    background-image: url('../images/contact/background_contact.png');
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}

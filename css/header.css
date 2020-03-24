@@ -1,0 +1,158 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: black;
+}
+
+.cabecalho {
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo-cabecalho {
+    float: left;
+    width: 128px;
+    margin: 13px 50px;
+}
+ 
+nav.menu {
+    float: right;
+    margin: 25px 50px 25px 0;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+    min-width: 100px;
+}
+
+
+/* Estados dos Botões */
+.button-home:hover {
+    font-weight: 900;
+    color: #e2dc40;
+}
+
+.button-home.active {
+    font-weight: 900;
+    color: #e2dc40;
+}
+
+.button-about:hover {
+    font-weight: 900;
+    color: #b9e906;
+}
+
+.button-about.active {
+    font-weight: 900;
+    color: #b9e906;
+}
+
+.button-resume:hover {
+    font-weight: 900;
+    color: #15fdd1;
+}
+
+.button-resume.active {
+    font-weight: 900;
+    color: #15fdd1;
+}
+
+.button-portfolio:hover {
+    font-weight: 900;
+    color: #BF79E0;
+}
+
+.button-portfolio.active {
+    font-weight: 900;
+    color: #BF79E0;
+}
+
+.button-contact:hover {
+    font-weight: 900;
+    color: #80d74a;
+}
+
+.button-contact.active {
+    font-weight: 900;
+    color: #80d74a;
+}
+
+/* Responsive Part */
+@media screen and (max-width: 690px){
+    /* cabecalho */
+    .logo-cabecalho {
+        margin: 13px 30px;
+    }
+
+    nav.menu {
+        overflow: hidden;
+    }
+
+    nav a {display: none;}
+
+    nav.menu.responsive {
+        float: none;
+        position: relative;
+        display: block;
+        margin: 90px auto 20px;
+        width: fit-content;
+    }
+
+    nav.menu.responsive a {
+        float: none;
+        display: inline;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+
+    /* Burguer Menu */
+    .container {
+        float: right;
+        margin: 20px 30px;
+        cursor: pointer;
+        }
+        
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 4px;
+        background-color: rgb(231, 231, 231);
+        border-radius: 10px;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+@media screen and (max-width: 425px){
+    .menu {
+        display: none;
+    }
+
+    nav.menu.responsive {
+        margin: 80px auto 20px;
+    }
+
+    nav.menu.responsive a {
+        display: block;
+    }
+}
