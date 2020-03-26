@@ -4,120 +4,71 @@ body {
 }
 
 .cabecalho {
-    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: rgb(0, 0, 0, 0.65);
     width: 100%;
-    top: 0;
+    height: 70px;
     position: fixed;
     overflow: hidden;
     z-index: 1;
 }
 
 .logo-cabecalho {
-    float: left;
-    width: 128px;
-    margin: 13px 50px;
+    height: 44px;
+    margin-left: 5%;
 }
  
-nav.menu {
-    float: right;
-    margin: 25px 50px 25px 0;
+.menu {
+    margin-right: 5%;
 }
 
-nav a {
+.menu a {
     color: #f1f1f1;
     text-decoration: none;
     font-size: 14px;
-    margin: 0 10px;
-    min-width: 100px;
-}
-
-
-/* Estados dos Botões */
-.button-home:hover {
-    font-weight: 900;
-    color: #e2dc40;
-}
-
-.button-home.active {
-    font-weight: 900;
-    color: #e2dc40;
-}
-
-.button-about:hover {
-    font-weight: 900;
-    color: #b9e906;
-}
-
-.button-about.active {
-    font-weight: 900;
-    color: #b9e906;
-}
-
-.button-resume:hover {
-    font-weight: 900;
-    color: #15fdd1;
-}
-
-.button-resume.active {
-    font-weight: 900;
-    color: #15fdd1;
-}
-
-.button-portfolio:hover {
-    font-weight: 900;
-    color: #BF79E0;
-}
-
-.button-portfolio.active {
-    font-weight: 900;
-    color: #BF79E0;
-}
-
-.button-contact:hover {
-    font-weight: 900;
-    color: #80d74a;
-}
-
-.button-contact.active {
-    font-weight: 900;
-    color: #80d74a;
+    margin-left: 20px;
+    letter-spacing: 0.5px
 }
 
 /* Responsive Part */
 @media screen and (max-width: 690px){
     /* cabecalho */
+    .cabecalho.responsive {
+        height: 105px;
+    }
+
     .logo-cabecalho {
-        margin: 13px 30px;
+        margin-left: 10%;
+        margin-top: 13px; 
+        margin-bottom: 13px;
     }
 
-    nav.menu {
-        overflow: hidden;
+    /* nav menu */
+    .menu {
+        display: none;
+        margin-right: 10%;
     }
 
-    nav a {display: none;}
-
-    nav.menu.responsive {
-        float: none;
-        position: relative;
-        display: block;
-        margin: 90px auto 20px;
-        width: fit-content;
+    .menu.responsive {
+        display: inline;
+        margin: 0 auto 15px;
     }
 
-    nav.menu.responsive a {
-        float: none;
+    .menu.responsive a {
         display: inline;
         font-size: 14px;
         line-height: 19px;
         text-align: center;
-        padding: 10px 0;
         margin: 0 10px;
     }
 
     /* Burguer Menu */
     .container {
-        float: right;
-        margin: 20px 30px;
+        margin-right: 10%;
         cursor: pointer;
         }
         
@@ -143,16 +94,89 @@ nav a {
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 490px){
+    .cabecalho.responsive {
+        height: 225px;
+    }
+
+    .logo-cabecalho {
+        margin-right: 20%;
+    }
+
     .menu {
         display: none;
     }
 
-    nav.menu.responsive {
-        margin: 80px auto 20px;
+    .menu.responsive {
+        margin: 0px 10% 15px auto;
+        height: 100%;
     }
 
-    nav.menu.responsive a {
+    .menu.responsive a {
+        margin-bottom: 10px;
         display: block;
+        text-align: right;
     }
+
+}
+
+/* Estados dos Botões */
+.button-home:hover {
+    font-weight: 900;
+    color: #e2dc40;
+    letter-spacing: 0px
+}
+
+.button-home.active {
+    font-weight: 900;
+    color: #e2dc40;
+    letter-spacing: 0px
+}
+
+.button-about:hover {
+    font-weight: 900;
+    color: #b9e906;
+    letter-spacing: 0px
+}
+
+.button-about.active {
+    font-weight: 900;
+    color: #b9e906;
+    letter-spacing: 0px
+}
+
+.button-resume:hover {
+    font-weight: 900;
+    color: #15fdd1;
+    letter-spacing: -0.1px
+}
+
+.button-resume.active {
+    font-weight: 900;
+    color: #15fdd1;
+    letter-spacing: -0.1px
+}
+
+.button-portfolio:hover {
+    font-weight: 900;
+    color: #BF79E0;
+    letter-spacing: 0px
+}
+
+.button-portfolio.active {
+    font-weight: 900;
+    color: #BF79E0;
+    letter-spacing: 0px
+}
+
+.button-contact:hover {
+    font-weight: 900;
+    color: #80d74a;
+    letter-spacing: 0.1px
+}
+
+.button-contact.active {
+    font-weight: 900;
+    color: #80d74a;
+    letter-spacing: 0.1px
 }

@@ -6,5 +6,8 @@ function menuBurguer(burguer) {
 // dropdown menu
 function showDropDown() {
     var burguer = document.querySelector('.menu')
+    var cabecalho = document.querySelector('.cabecalho')
+
     burguer.classList.toggle("responsive")
+    cabecalho.classList.toggle("responsive")
   }

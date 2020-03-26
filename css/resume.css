@@ -5,3 +5,49 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+ul {
+    font-size: 18px;
+    display: inline-block;
+    color: #f1f1f1;
+}
+
+.content {
+    width: 720px;
+    margin: 200px auto;
+    height: 400px;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.exp-bar {
+    top: 183px;
+    left: 284px;
+    margin: auto;
+
+}
+
+.titulo-exp {
+    display: inline;
+    vertical-align: top;
+
+    color: #f1f1f1;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.list-job {
+    width: 320px;
+}
+
+.job {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    opacity: 0.5;
+}

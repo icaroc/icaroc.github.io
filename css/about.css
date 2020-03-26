@@ -8,10 +8,9 @@ body {
 }
 
 .content {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 50%;
-    transform: translate(0, -50%);
+    margin: 110px auto 50px;
     /* height: auto;
     margin-top: 150px; */
 }
@@ -20,6 +19,7 @@ body {
     /* border */
     border: 2px solid white;
     border-radius: 50em;
+
     /* position */
     display: block;
     margin: auto;
@@ -67,9 +67,34 @@ p strong {
     margin-top: 40px;
 }
 
+.paragraph {
+    width: 60%;
+    margin: 0 auto;
+}
+
 p {
-    width: 720px;
     margin: 1em auto 0;
     font-size: 18px;
     line-height: 1.3em;
+}
+
+@media screen and (max-width: 920px){
+    .paragraph {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .avatar {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .nome {
+        font-size: 32px;
+    }
+    p {
+        font-size: 16px;
+    }
 }
