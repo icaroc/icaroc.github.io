@@ -1,3 +1,4 @@
+/* Main */
 body {
     background-image: url('../images/resume/background_resume.png');
     background-size: cover;
@@ -6,33 +7,47 @@ body {
     background-position: center center;
 }
 
-ul {
-    font-size: 18px;
-    display: inline-block;
-    color: #f1f1f1;
+strong {
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 .content {
-    width: 720px;
-    margin: 200px auto;
-    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+    width: 900px;
+    height: 600px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -250px;
 }
 
-strong {
-    font-weight: 500;
+.skill-icon, .soft-icon, .exp-icon {
+    display: none;
+}
+
+/* Experiencias */
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
 }
 
 .exp-bar {
-    top: 183px;
-    left: 284px;
-    margin: auto;
-
+    width: fit-content;
 }
 
 .titulo-exp {
-    display: inline;
-    vertical-align: top;
+    position: absolute;
 
+    margin-top: 22px;
+    margin-left: 90px;
+    height: fit-content;
     color: #f1f1f1;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -42,12 +57,239 @@ strong {
 
 .list-job {
     width: 320px;
+    font-size: 18px;
+    color: #f1f1f1;
+
+    margin-top: 80px;
+
+    top: 13%;
+    left: 9%;
+}
+
+.parent-job {
+    width: fit-content;
+    display: flex;
+}
+
+.bolinha-job {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #15fdd1;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 15px;
 }
 
 .job {
+    cursor: pointer;
+
     margin-bottom: 10px;
+    letter-spacing: -0.01em;
+    line-height: 1.1em;
+}
+
+.job:hover {
+    opacity: 70%;
 }
 
 .subtitle {
-    opacity: 0.5;
+    font-size: 16px;
+    opacity: 0.55;
+}
+
+/* Texto de Experiencia */
+.text-experience {
+    margin-top: 24px;
+
+    width: 400px;
+    height: fit-content;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f1f1;
+}
+
+/* Skills */
+.skills-software {
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
+}
+
+.skill-bar {
+    width: fit-content;
+}
+
+.titulo-skl {
+    position: absolute;
+
+    margin-top: 22px;
+    margin-left: 90px;
+    height: fit-content;
+    color: #f1f1f1;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.list-skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 340px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f1f1;
+    margin-top: 80px;
+    
+    height: 150px;
+}
+
+.parent-skill {
+    width: fit-content;
+    display: flex;
+
+    padding-bottom: 5px;
+}
+
+.bolinha-skill {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #15fdd1;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+/* Softwares and expertises */
+.titulo-soft {
+    position: absolute;
+
+    margin-top: 265px;
+    margin-left: 90px;
+    height: fit-content;
+    color: #f1f1f1;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.soft-bars {
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 320px;
+}
+
+@media screen and (max-height: 700px){
+    .content {
+        /* position: relative; */
+        top: 0;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .content {
+        position: relative;
+        display: block;
+
+        width: 700px;
+        height: fit-content;
+
+        top: 0;
+        left: 0;
+        margin: 100px auto 50px;
+    }
+
+    .experiences {
+        z-index: 1;
+    }
+
+    .text-experience {
+        width: 250px;
+        margin-top: 75px;
+        text-align: right;
+    }
+
+    .exp-box {
+        display: flex;
+        z-index: 1;
+    }
+
+    .skills-software {
+        margin-top: -5px;
+        z-index: 0;
+    }
+
+    .list-skills {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .content {
+        width: 400px;
+    }
+
+    .text-experience {
+        display: none;
+    }
+
+    .titulo-soft {
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .exp-bar, .skill-bar {
+        display: none;
+    }
+
+    .skill-icon, .soft-icon, .exp-icon {
+        display: block;
+        height: max-content;
+        width: max-content;
+    }
+
+    .content {
+        width: 300px;
+    }
+
+    .experiences {
+        width: 300px;
+    }
+
+    .list-job {
+        width: 290px;
+        margin: 20px 10px 30px 10px;
+    }
+
+    .skills-software {
+        width: 300px;
+    }
+
+    .list-skills {
+        width: 290px;
+        margin: 20px 10px 30px 10px;
+    }
+
+    .titulo-soft {
+        margin-top: 275px;
+    }
+
+    .soft-bars {
+        margin-left: 10px;
+        margin-top: 350px;
+        margin-bottom: 30px;
+    }
+
+    .titulo-exp, .titulo-skl, .titulo-soft {
+        margin-left: 80px;
+    }
 }
