@@ -1,3 +1,4 @@
+/* BACKGROUND */
 body {
     background-image: url('../images/contact/background_contact.png');
     height: 100%;
@@ -5,4 +6,143 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* MAIN */
+.content {
+    width: 420px;
+    /* height: 600px; */
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -57%);
+}
+
+/* CONTACTS */
+.contact-title {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contact-way {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.green-icon {
+    width: 20px;
+    height: 100%;
+}
+
+.contact-info {
+    color: #e9e9e9;
+    font-weight: 100;
+    font-size: 17px;
+    /* letter-spacing: -0.02em; */
+    margin-left: 20px;
+}
+
+/* DIVIDER */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.or {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.line {
+    width: 115px;
+    height: 2px;
+    background-color: #80d74a;
+
+    margin-left: 10px;
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* FORM */
+.field {
+    width: 390px;
+    height: 33px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    background-color: #ebebeb;
+    border: none;
+    padding: 0 15px;
+
+}
+
+.field::placeholder {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    opacity: 0.4;
+    letter-spacing: 0.2em;
+    
+}
+
+.field:focus {
+    outline-color: #80d74a;
+}
+
+#f-text {
+    height: 70px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: #80d74a;
+}
+
+.button::first-line {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+
+/* RODAPÉ */
+.rodape {
+    height: 140px;
+
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+}
+
+.social-network {
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.social-button {
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.copyright {
+    text-align: center;
+    color: #acacac;
 }
