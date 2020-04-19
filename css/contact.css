@@ -1,6 +1,12 @@
 /* BACKGROUND */
 body {
-    background-image: url('../images/contact/background_contact.png');
+    background-image: 
+        linear-gradient(
+        rgb(0, 0, 0, 0.9) 25%, 
+        rgb(0, 0, 0, 0.7) 65%, 
+        rgb(0, 0, 0, 0.7) 75%, 
+        rgb(0, 0, 0, 0.9) 100%),
+        url(../images/contact/background_contact.jpg);
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -12,6 +18,11 @@ body {
 .content {
     width: 420px;
     /* height: 600px; */
+
+    /* position: relative;
+    margin: 0 auto;
+    top: 50vh;
+    margin-top: -40vh; */
 
     margin: 0;
     position: absolute;
@@ -145,4 +156,18 @@ body {
 .copyright {
     text-align: center;
     color: #acacac;
+}
+
+@media (max-width: 478px) {
+    .content {
+        width: 90%;
+    }
+
+    .field {
+        width: -webkit-fill-available;
+    }
+
+    form, .button {
+        width: 100%;
+    }
 }

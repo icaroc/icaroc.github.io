@@ -1,6 +1,12 @@
 /* Main */
 body {
-    background-image: url('../images/resume/background_resume.png');
+    background-image: 
+        linear-gradient(
+        rgb(0, 0, 0, 0.9) 25%, 
+        rgb(0, 0, 0, 0.7) 65%, 
+        rgb(0, 0, 0, 0.7) 75%, 
+        rgb(0, 0, 0, 0.9) 100%),
+        url(../images/resume/background_resume.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -20,11 +26,12 @@ strong {
     width: 900px;
     height: 600px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -450px;
-    margin-top: -250px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+    top: 50vh;
+    margin-top: -30vh;
 }
 
 .skill-icon, .soft-icon, .exp-icon {

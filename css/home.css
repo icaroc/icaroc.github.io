@@ -1,5 +1,6 @@
 body {
-    background-image: url('../images/index/pool.png');
+    background-image:
+        url(../images/index/background_index.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
