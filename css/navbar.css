@@ -21,9 +21,12 @@ body {
 }
 
 .logo-cabecalho {
-    height: 44px;
     margin-left: 5%;
     margin-top: 13px;
+}
+
+.logo-cabecalho-image {
+    height: 44px;
 }
 
 .menu {
