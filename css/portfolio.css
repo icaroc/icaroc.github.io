@@ -5,7 +5,7 @@ body {
         rgb(0, 0, 0, 0.7) 65%, 
         rgb(0, 0, 0, 0.7) 75%, 
         rgb(0, 0, 0, 0.9) 100%),
-        url(../images/porfolio/background_portfolio.png);
+        url(../img/porfolio/background_portfolio.png);
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -29,25 +29,25 @@ body {
 }
 
 .environment {
-    background: url(../images/porfolio/cover_environment.jpg) no-repeat center 45% / cover;
+    background: url(../img/porfolio/cover_environment.jpg) no-repeat center 45% / cover;
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
 }
 
 .character {
-    background: url(../images/porfolio/cover_character.jpg) no-repeat center 20% / cover;
+    background: url(../img/porfolio/cover_character.jpg) no-repeat center 20% / cover;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
 
 .product {
-    background: url(../images/porfolio/cover_product.jpg) no-repeat center 70% / cover;
+    background: url(../img/porfolio/cover_product.jpg) no-repeat center 70% / cover;
     grid-column: 1 / span 2;
     grid-row: 2 / 3;
 }
 
 .render {
-    background: url(../images/porfolio/cover_render.jpg) no-repeat center 20% / cover;
+    background: url(../img/porfolio/cover_render.jpg) no-repeat center 20% / cover;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }

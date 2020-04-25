@@ -1,53 +1,8 @@
 body {
     background-image:
-        url(../images/index/background_index.jpg);
+        url(../img/index/background_index.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/* .crossfade > figure {
-    animation-name: imageAnimation;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    backface-visibility: hidden;
-    background-size: cover;
-    background-position: center center;
-    color: transparent;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-.crossfade > figure:nth-child(1) {
-    animation-delay: 0s;
-    background-image: url('../images/index/guitar.png');
-}
-
-.crossfade > figure:nth-child(2) {
-    animation-delay: 6s;
-    background-image: url('../images/index/guitar2.png');
-}
-
-@keyframes imageAnimation {
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1
-    }
-    25% {
-        opacity: 1
-    }
-    100% {
-        opacity: 0
-    }
-} */
