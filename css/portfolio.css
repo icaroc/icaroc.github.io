@@ -97,7 +97,7 @@ body {
 @media (max-width: 690px) {
     .content{
         margin-top: 100px;
-        top: 0;
+        top: 0git ;
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;
 
