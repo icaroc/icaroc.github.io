@@ -171,3 +171,13 @@ body {
         width: 100%;
     }
 }
+
+@media (max-height: 720px) {
+    .content {
+        position: relative;
+        margin: 100px auto 130px;
+        top: 0;
+        left: 0;
+        transform: initial;
+    }
+}
