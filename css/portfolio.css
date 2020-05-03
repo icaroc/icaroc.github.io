@@ -94,9 +94,16 @@ body {
     }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 940px) {
+    .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 560px) {
     .content{
         margin-top: 100px;
+        margin-bottom: 30px;
         top: 0;
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;

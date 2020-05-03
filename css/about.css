@@ -91,6 +91,7 @@ p {
 @media screen and (max-width: 920px){
     .paragraph {
         width: 90%;
+        margin-bottom: 70px;
     }
 }
 
