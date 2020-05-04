@@ -1,8 +1,39 @@
 body {
     background-image:
+        linear-gradient(
+        rgb(0, 0, 0, 0.4) 25%, 
+        rgb(0, 0, 0, 0.5) 65%, 
+        rgb(0, 0, 0, 0.5) 75%, 
+        rgb(0, 0, 0, 0.6) 100%),
         url(../img/index/background_index.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.content {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    top: 50vh;
+    margin-top: -10vh;
+
+    text-align: center;
+}
+
+.home-logo {
+    width: 450px;
+    transform: rotate(-2deg);
+    
+}
+
+.home-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.705);
+    margin-top: -8px;
+    font-weight: 300;
+    margin-left: 120px;
 }
