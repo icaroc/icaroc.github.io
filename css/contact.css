@@ -170,6 +170,14 @@ body {
     form, .button {
         width: 100%;
     }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    p.contact-info {
+        font-size: 13px;
+    }
 }
 
 @media (max-height: 720px) {

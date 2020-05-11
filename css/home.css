@@ -37,3 +37,14 @@ body {
     font-weight: 300;
     margin-left: 120px;
 }
+
+@media (max-width: 570px) {
+    .home-logo {
+        width: 250px;
+    }
+
+    .home-text {
+        font-size: 14px;
+        margin: 0;
+    }
+}
