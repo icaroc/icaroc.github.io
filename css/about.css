@@ -1,26 +1,11 @@
-body {
-    background-image: 
-        linear-gradient(
-        rgb(0, 0, 0, 0.9) 25%, 
-        rgb(0, 0, 0, 0.7) 65%, 
-        rgb(0, 0, 0, 0.7) 75%, 
-        rgb(0, 0, 0, 0.9) 100%),
-        url(../img/about/background_about.jpg);
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.content {
-    position: relative;
+.about {
+    background-color: black;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 
-    top: 50vh;
-    margin-top: -35vh;
+    padding: 100px 0;
+
     /* height: auto;
     margin-top: 150px; */
 }
@@ -78,8 +63,8 @@ p strong {
 }
 
 .paragraph {
-    width: 50%;
-    margin: 0 auto 40px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 p {
@@ -91,7 +76,6 @@ p {
 @media screen and (max-width: 920px){
     .paragraph {
         width: 90%;
-        margin-bottom: 70px;
     }
 }
 

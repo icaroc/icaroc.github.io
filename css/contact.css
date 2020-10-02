@@ -1,34 +1,13 @@
-/* BACKGROUND */
-body {
-    background-image: 
-        linear-gradient(
-        rgb(0, 0, 0, 0.9) 25%, 
-        rgb(0, 0, 0, 0.7) 65%, 
-        rgb(0, 0, 0, 0.7) 75%, 
-        rgb(0, 0, 0, 0.9) 100%),
-        url(../img/contact/background_contact.jpg);
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+.contact {
+    background-color: rgba(0, 0, 0, 0.80);
 }
 
-/* MAIN */
-.content {
-    width: 420px;
-    /* height: 600px; */
+.content-contact {
+    width: 70%;
+    height: 600px;
 
-    /* position: relative;
     margin: 0 auto;
-    top: 50vh;
-    margin-top: -40vh; */
-
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -57%);
+    padding: 100px 0 70px;
 }
 
 /* CONTACTS */
@@ -118,7 +97,7 @@ body {
 }
 
 .button {
-    width: 100%;
+    width: 200px;
     height: 50px;
     border: none;
     border-radius: 2px;
@@ -135,16 +114,16 @@ body {
 
 /* RODAPÉ */
 .rodape {
-    height: 110px;
+    display: inline-block;
+    height: 120px;
 
-    position: fixed;
     width: 100%;
     bottom: 0;
     background-color: black;
 }
 
 .social-network {
-    margin: 30px 0 10px;
+    margin: 30px 0 0;
     text-align: center;
 }
 
@@ -156,6 +135,7 @@ body {
 .copyright {
     text-align: center;
     color: #acacac;
+    margin-top: 10px;
 }
 
 @media (max-width: 478px) {

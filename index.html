@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="index">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700,900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     </head>
@@ -18,28 +21,134 @@
     <body>
         <!-- Cabeçalho -->
         <header class="cabecalho">
-            <a href="index.html" class="logo-cabecalho"><img src="img/logo.svg" alt="logo Icaro Carvalho" class="logo-cabecalho-image"></a>
-            <!-- Burguer Menu -->
-            <div class="container" onclick="menuBurguer(this), showDropDown()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="cabecalho-content">
+                <a href="index.html" class="logo-cabecalho"><img src="img/logo.svg" alt="logo Icaro Carvalho" class="logo-cabecalho-image"></a>
+                <!-- Burguer Menu -->
+                <div class="container" onclick="menuBurguer(this), showDropDown()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <!-- Menu -->
+                <nav class="menu">
+                    <a href="#index" class="button-home">HOME</a>
+                    <a href="#about" class="button-about">ABOUT</a>
+                    <a href="#portfolio" class="button-portfolio">PORTFOLIO</a>
+                    <a href="#contact" class="button-contact">CONTACT</a>
+                </nav>
             </div>
-            <!-- Menu -->
-            <nav class="menu">
-                <a href="index.html" class="button-home">HOME</a>
-                <a href="about.html" class="button-about">ABOUT</a>
-                <a href="portfolio.html" class="button-portfolio">PORTFOLIO</a>
-                <a href="contact.html" class="button-contact">CONTACT</a>
-            </nav>
         </header>
 
         <main>
-            <div class="content">
-                <img class="home-logo" src="img/logo.svg">
-                <h2 class="home-text">3D artist and game dev portfolio.</h2>
+            <div class="index">
+                <div class="content-index">
+                    <img class="home-logo" src="img/logo.svg">
+                    <h2 class="home-text">3D artist and game dev portfolio.</h2>
+                </div>
+            </div>
+
+            <div class="about" id="about">
+                <div class="avatar-pack">
+                    <img src="img/about/avatar.png" alt="Avatar" class="avatar">
+                    <img src="img/about/detalhe_avatar.png" class="avatar-detalhe">
+                </div>
+
+                <h1 class="nome">Icaro Carvalho</h1>
+                <h2 class="titulo">3D Artist, 26 years old</h2>
+                <div class="paragraph">
+                    <p class="first-p">I’m a <strong>3D artist</strong> with background in <strong>Graphic Designer</strong> and a programming enthusiast.
+                        I’ve been working with 3D for the past five years, in the most varied areas, from modeling and texturing for medical projects in VR to 3D character animation for an accessibility app to the deaf community.</p>
+                    <p>Always improving my skills and hardwoking to achieve my dream of working in the <strong>Game Industry</strong> with the bests professionals.</p>
+                    <p>I take a lot of courses frequently to improve my skills and knowledge about the field.<br> 
+                        <a href="img/Resume_2020.pdf" target="_blank" class="click-here-p"><strong>Click here</strong></a> to read more about me, my experiences and skills in my resume.</p>
+                </div>
+            </div>
+
+            <div class="portfolio" id="portfolio">
+                <h2 class="titulo-portfolio">Portfólio</h2>
+                <div class="content-portfolio">
+                    <a href="portfolio-environments.html" class="over-container environment">
+                        <div class="overlay">
+                            <div class="text">environments</div>
+                        </div>
+                    </a>
+                    <a href="portfolio-characters.html" class="over-container character">
+                        <div class="overlay">
+                            <div class="text">characters</div>
+                        </div>
+                    </a>
+                    <a href="portfolio-products.html" class="over-container product">
+                        <div class="overlay">
+                            <div class="text">products</div>
+                        </div>
+                    </a>
+                    <a href="portfolio-renders.html" class="over-container render">
+                        <div class="overlay">
+                            <div class="text">renders</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="content-contact" id="contact">
+                    <section class="contact_me">
+                        <h2 class="contact-title">contact me</h2>
+                        <div class="contact-way">
+                            <img src="img/contact/phone_green.svg" alt="Phone Icon" class="green-icon">
+                            <p class="contact-info">+ 55 82 9 9614-6676</p>
+                        </div>
+                        <div class="contact-way">
+                            <img src="img/contact/email_green.svg" alt="Email Icon" class="green-icon">
+                            <p class="contact-info">icaroricardoc@gmail.com</p>
+                        </div>
+                        <div class="contact-way">
+                            <img src="img/contact/arstation_green.svg" alt="Artstation Icon" class="green-icon">
+                            <p class="contact-info">artstation.com/icarocarvalho</p>
+                        </div>
+                        <div class="contact-way">
+                            <img src="img/contact/LinkedIn_green.svg" alt="LinkedIn Icon" class="green-icon">
+                            <p class="contact-info">https://www.linkedin.com/in/icaroricardoc/</p>
+                        </div>
+                        <div class="contact-way">
+                            <img src="img/contact/instagram_green.svg" alt="Instagram Icon" class="green-icon">
+                            <p class="contact-info">@icaro.obj</p>
+                        </div>
+                    </section>
+
+                    <div class="divider">
+                        <p class="or">or</p>
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                    <section class="send-message">
+                        <h2 class="contact-title">send me a message</h2>
+                        <form method="post" name="myemailform" action="form-to-email.php">
+                            <input type="text" name="name" placeholder="name" class="field"><br>
+                            <input type="email" name="email" placeholder="e-mail" class="field"><br>
+                            <textarea type="text" name="text" placeholder="text" class="field" id="f-text"></textarea><br>
+                            <input type="submit" name="submit" value="send it to me!" class="button">
+                        </form>
+                    </section>
+                </div>
             </div>
         </main>
+
+        <footer class="rodape">
+            <div class="social-network">
+                <a href="https://www.artstation.com/icarocarvalho" target="_blank" class="social-button">
+                    <img src="img/icons/Artstation.svg" alt="Artstation Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/icaroricardoc/" target="_blank" class="social-button">
+                    <img src="img/icons/linkedin.svg" alt="Linkedin Icon">
+                </a>
+                <a href="https://www.instagram.com/icaro.obj/" target="_blank" class="social-button">
+                    <img src="img/icons/instagram.svg" alt="Instagram Icon">
+                </a>
+            </div>
+            <p class="copyright">All rights reserved Copyright © 2020 Icaro Carvalho</p>
+        </footer>
     
     <script src="js/active-button.js"></script>
     <script src="js/menu-dropdown.js"></script>
