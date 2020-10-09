@@ -7,6 +7,10 @@
     font-size: 35px;
 }
 
+h3 {
+    color: white;
+}
+
 .content-portfolio {
     display: grid;
     grid-template-rows: 50% 50%;
@@ -20,30 +24,6 @@
     padding: 100px 0;
 
     margin: 0 auto;
-}
-
-.environment {
-    background: url(../img/porfolio/cover_environment.jpg) no-repeat center 45% / cover;
-    grid-column: 1 / span 2;
-    grid-row: 1 / 2;
-}
-
-.character {
-    background: url(../img/porfolio/cover_character.jpg) no-repeat center 20% / cover;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-.product {
-    background: url(../img/porfolio/cover_product.jpg) no-repeat center 70% / cover;
-    grid-column: 1 / span 2;
-    grid-row: 2 / 3;
-}
-
-.render {
-    background: url(../img/porfolio/cover_render.jpg) no-repeat center 20% / cover;
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
 }
 
 .over-container {
@@ -80,53 +60,4 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-@media (max-height: 800px) {
-    .over-container {
-        height: 250px;
-    }
-}
-
-@media (max-width: 940px) {
-    .content {
-        width: 90%;
-    }
-}
-
-@media (max-width: 560px) {
-    .content{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        top: 0;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%;
-
-        width: 90%;
-    }
-
-    .environment, .character, .product, .render {
-        grid-column: 1 / 2;
-    }
-
-    .environment {
-        grid-row: 1 / 2;
-    }
-
-    .character {
-        grid-row: 2 / 3;
-    }
-
-    .product {
-        grid-row: 3 / 4;
-    }
-
-    .render {
-        grid-row: 4 / 4;
-    }
-
-    .over-container {
-        height: 150px;
-    }
-
 }
