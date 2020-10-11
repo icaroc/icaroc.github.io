@@ -10,7 +10,7 @@ body {
     top: 0;
     overflow: hidden;
     z-index: 3;
-    transition: 0.4s;
+    height: 70px;
 }
 
 .cabecalho-content {
@@ -19,10 +19,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     top: 0;
-
+    
     margin: 0 auto;
     width: 70%;
-    height: 70px;   
+    height: 100%;   
 }
 
 .logo-cabecalho {
@@ -43,11 +43,12 @@ body {
     text-decoration: none;
     font-size: 14px;
     margin-left: 20px;
-    letter-spacing: 0.5px
+    letter-spacing: 0.5px;
 }
 
 .cabecalho.responsive {
-    height: 239px;
+    height: 190px;
+    /* transition: 0.4s; */
 }
 
 .cabecalho-content.responsive {

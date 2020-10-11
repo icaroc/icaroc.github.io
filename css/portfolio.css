@@ -1,63 +1,56 @@
-.titulo-portfolio{
-    display: block;
-    color: white;
-    width: 70%;
-    margin: 0 auto;
-
-    font-size: 35px;
-}
-
-h3 {
+.portfolio {
+    background-color: black;
     color: white;
 }
 
 .content-portfolio {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    column-gap: 2px;
-    row-gap: 2px;
-
-    position: relative;
+    display: block;
     width: 70%;
-
     padding: 100px 0;
-
     margin: 0 auto;
 }
 
-.over-container {
-    position: inherit;
-    height: 304px;
+.titulo-portfolio {
+    margin: 0 auto;
+    font-size: 35px;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #BF79E0;
-}
-  
-.over-container:hover .overlay {
-    opacity: .9;
-}
-  
-.text {
-    opacity: 1;
-    color: white;
+.subtitulo-portfolio {
     font-size: 24px;
-    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 70px;   
+}
+
+@media (min-width: 570px) {
+    .image {
+        height: 100px;
+    }
+}
+
+@media (min-width: 700px) {
+    .images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image {
+        height: 150px;
+    }
     
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    a {
+        flex-grow: 4;
+        width: 24.8%;
+    }
 }
