@@ -98,23 +98,12 @@ body {
     .menu {
         display: none;
     }
-
-    .logo-cabecalho {
-    }
-
-    .logo-cabecalho-image {
+        .logo-cabecalho-image {
         height: 47px;
     }
 }
 
 @media screen and (min-width: 700px){
-    /* cabecalho */
-    .cabecalho.responsive {
-    }
-    
-    .logo-cabecalho {
-    }
-    
     /* nav menu */
     .menu {
         display: flex;
@@ -123,71 +112,22 @@ body {
     .container {
         display: none;
     }
-    
-    .menu.responsive {
-    }
-    
-    .menu.responsive a {
-    }
 }
 
 /* Estados dos Botões */
-.button-home:hover {
-    font-weight: 900;
-    color: #e2dc40;
-    letter-spacing: 0px
-}
-
-.button-home.active {
-    font-weight: 900;
-    color: #e2dc40;
-    letter-spacing: 0px
-}
-
-.button-about:hover {
-    font-weight: 900;
-    color: #b9e906;
-    letter-spacing: 0px
-}
-
-.button-about.active {
-    font-weight: 900;
-    color: #b9e906;
-    letter-spacing: 0px
-}
-
-.button-resume:hover {
-    font-weight: 900;
-    color: #15fdd1;
-    letter-spacing: -0.1px
-}
-
-.button-resume.active {
-    font-weight: 900;
-    color: #15fdd1;
-    letter-spacing: -0.1px
-}
-
-.button-portfolio:hover {
-    font-weight: 900;
-    color: #BF79E0;
-    letter-spacing: 0px
-}
-
-.button-portfolio.active {
-    font-weight: 900;
-    color: #BF79E0;
-    letter-spacing: 0px
-}
-
+.button-home.active,
+.button-home:hover,
+.button-about.active,
+.button-about:hover,
+.button-portfolio.active,
+.button-portfolio:hover,
+.button-contact.active,
 .button-contact:hover {
+    letter-spacing: 0px;
     font-weight: 900;
     color: #80d74a;
-    letter-spacing: 0.1px
 }
 
-.button-contact.active {
-    font-weight: 900;
-    color: #80d74a;
+.button-contact:hover,.button-contact.active {
     letter-spacing: 0.1px
 }

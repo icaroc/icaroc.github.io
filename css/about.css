@@ -1,5 +1,15 @@
 .about {
-    background-color: rgba(15, 15, 15, 1);
+    background-image:
+        linear-gradient(
+        rgb(0, 0, 0, 0.99) 15%, 
+        rgb(0, 0, 0, 0.8) 55%, 
+        rgb(0, 0, 0, 0.9) 75%, 
+        rgb(0, 0, 0, 0.99) 100%),
+        url(../img/about/background_about.png);
+        
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content-about {
@@ -36,7 +46,7 @@ p strong {
 
 .click-here-p {
     text-decoration: none;
-    color: #b9e906;
+    color: #80d74a;
 }
 
 .nome {
