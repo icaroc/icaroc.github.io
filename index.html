@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/about.css">
-        <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/contact.css">
         <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700,900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -33,7 +32,7 @@
                 <nav class="menu">
                     <a href="#index" class="button-home">HOME</a>
                     <a href="#about" class="button-about">ABOUT</a>
-                    <a href="#portfolio" class="button-portfolio">PORTFOLIO</a>
+                    <a href="https://www.artstation.com/icarocarvalho" target="_blank" class="button-portfolio">PORTFOLIO</a>
                     <a href="#contact" class="button-contact">CONTACT</a>
                 </nav>
             </div>
@@ -66,115 +65,25 @@
                 </div>
             </div>
 
-            <div class="portfolio" id="portfolio">
-                <div class="content-portfolio">
-                    <h2 class="titulo-portfolio">Portfólio</h2>
-                    <h3 class="subtitulo-portfolio">Games</h3>
-                    <div class="images">
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">the big monster, o jogo</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="subtitulo-portfolio">3D</h3>
-                    <div class="images">
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">Qualquer Porra</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">Qualquer Porra</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">Qualquer Porra</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">Qualquer Porra</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">Qualquer Porra</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="image-portfolio-container">
-                            <a target="_blank" href="#">
-                                <img class="image" src="img\porfolio\products\prod_chair.png" alt="">
-                                <div class="overlay">
-                                    <div class="texto-image">Qualquer Porra</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="contact">
                 <div class="content-contact" id="contact">
-                    <section class="contact_me">
-                        <h2 class="contact-title">contact me</h2>
-                        <div class="contact-way">
-                            <img src="img/contact/phone_green.svg" alt="Phone Icon" class="green-icon">
-                            <p class="contact-info">+ 55 82 9 9614-6676</p>
-                        </div>
-                        <div class="contact-way">
-                            <img src="img/contact/email_green.svg" alt="Email Icon" class="green-icon">
-                            <p class="contact-info">icaroricardoc@gmail.com</p>
-                        </div>
-                        <div class="contact-way">
-                            <img src="img/contact/arstation_green.svg" alt="Artstation Icon" class="green-icon">
-                            <p class="contact-info">artstation.com/icarocarvalho</p>
-                        </div>
-                        <div class="contact-way">
-                            <img src="img/contact/LinkedIn_green.svg" alt="LinkedIn Icon" class="green-icon">
-                            <p class="contact-info">https://www.linkedin.com/in/icaroricardoc/</p>
-                        </div>
-                        <div class="contact-way">
-                            <img src="img/contact/instagram_green.svg" alt="Instagram Icon" class="green-icon">
-                            <p class="contact-info">@icaro.obj</p>
-                        </div>
-                    </section>
-
-                    <div class="divider">
-                        <p class="or">or</p>
-                        <div class="line"></div>
-                        <div class="circle"></div>
+                    <h2 class="contact-title">contact me</h2>
+                    <div class="contact-way">
+                        <img src="img/contact/phone_green.svg" alt="Phone Icon" class="green-icon">
+                        <p class="contact-info">+ 55 82 9 9614-6676</p>
                     </div>
-
-                    <section class="send-message">
-                        <h2 class="contact-title">send me a message</h2>
-                        <form method="post" name="myemailform" action="form-to-email.php">
-                            <input type="text" name="name" placeholder="name" class="field"><br>
-                            <input type="email" name="email" placeholder="e-mail" class="field"><br>
-                            <textarea type="text" name="text" placeholder="text" class="field" id="f-text"></textarea><br>
-                            <input type="submit" name="submit" value="send it to me!" class="button">
-                        </form>
-                    </section>
+                    <div class="contact-way">
+                        <img src="img/contact/email_green.svg" alt="Email Icon" class="green-icon">
+                        <p class="contact-info">icaroricardoc@gmail.com</p>
+                    </div>
+                    <div class="contact-way">
+                        <img src="img/contact/LinkedIn_green.svg" alt="LinkedIn Icon" class="green-icon">
+                        <p class="contact-info">https://www.linkedin.com/in/icaroricardoc/</p>
+                    </div>
+                    <div class="contact-way">
+                        <img src="img/contact/instagram_green.svg" alt="Instagram Icon" class="green-icon">
+                        <p class="contact-info">@icaro.obj</p>
+                    </div>
                 </div>
             </div>
         </main>

@@ -11,22 +11,22 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+
+    width: 100%;
 }
 
 .content-contact {
     width: 70%;
-    height: 600px;
-
     margin: 0 auto;
-    padding: 100px 0 70px;
+    padding: 100px 0;
 }
 
 /* CONTACTS */
 .contact-title {
-    font-size: 24px;
+    font-size: 54px;
     color: white;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .contact-way {
@@ -45,7 +45,8 @@
     font-weight: 100;
     font-size: 17px;
     /* letter-spacing: -0.02em; */
-    margin-left: 20px;
+    margin: auto 20px;
+
 }
 
 /* DIVIDER */
